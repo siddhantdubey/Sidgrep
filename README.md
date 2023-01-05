@@ -13,6 +13,8 @@ To obtain the text, I used [this api](https://github.com/siddhantdubey/Sidgrep) 
 
 Once you have the raw text, follow the [docs from OpenAI](https://beta.openai.com/docs/guides/embeddings/how-to-get-embeddings) to make an embeddings column in the csv. While you're at it, save your OpenAI key in a `.env` file so that this app can actually run. 
 
+If you want examples to look at, here's a repository with my `.ipynb` files: [examples](https://github.com/siddhantdubey/SidgrepPrep/).
+
 ## Hosting The Data 
 The size of your data after adding the embedddings will likely be very large (mine went from 2.5 MB before embeddings to 972 MB afterwards). Any naive way of looping through and calculating cosine similarities would probably not be efficient, so I had to host the data somehow. I chose to use [Pinecone](https://www.pinecone.io/), one of the sources recommended by OpenAI. It's a vector database built for vector search, so it saved me a lot of implementation. Follow Pinecone's documentation to upload your data to an index, get the link to your index and save it in the `.env` file as `NEXT_PUBLIC_PINECONE_URL` and save your api key as `NEXT_PUBLIC_PINECONE_KEY`. At this point you should be good to go.
 
