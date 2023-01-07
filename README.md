@@ -20,6 +20,8 @@ The size of your data after adding the embedddings will likely be very large (mi
 
 ## Running The Project After Setup
 
+YOU WILL PROBABLY NEED A CORS-PROXY! Right now this app is using the [cors-anywhere](https://cors-anywhere.herokuapp.com/) demo proxy. Make sure to set this up before running otherwise you'll run into CORS errors.
+
 First, run the development server:
 
 ```bash
