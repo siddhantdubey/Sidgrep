@@ -17,6 +17,7 @@ specifiers:
   react-dom: 18.2.0
   tailwindcss: ^3.2.4
   typescript: 4.9.4
+  youtube-thumbnail-api: ^1.0.2
 
 dependencies:
   '@next/font': 13.1.1
@@ -31,6 +32,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   typescript: 4.9.4
+  youtube-thumbnail-api: 1.0.2
 
 devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.20
@@ -3184,4 +3186,8 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: false
+
+  /youtube-thumbnail-api/1.0.2:
+    resolution: {integrity: sha512-5OyyBUUS2yMVynF+5f5T2r4lrvGbv8VEuZ2woFqrrAoGnJP41RSRAGkcotfnmb5RMCGUsa/+gQww7N4ldPSHJA==}
     dev: false

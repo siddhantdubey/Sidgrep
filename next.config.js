@@ -8,6 +8,11 @@ const nextConfig = {
                 hostname: 'www.google.com',
                 port: '',
             },
+            {
+                protocol: 'https',
+                hostname: 'img.youtube.com',
+                port: '',
+            }
         ],
     },
 }
