@@ -71,10 +71,11 @@ export default function Home() {
                             })
                         }}
                     >Search</button>
-
-                    {results.length > 0 && results.map((result) => (
-                        <Result result={result} key={result.id} />
-                    ))}
+                    <div className="flex flex-row">
+                        {results.length > 0 && results.map((result) => (
+                            <Result result={result} key={result.id} />
+                        ))}
+                    </div>
                 </div>
             </div>
         </>
