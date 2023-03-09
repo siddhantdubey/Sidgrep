@@ -18,6 +18,8 @@ If you want examples to look at, here's a repository with my `.ipynb` files: [ex
 ## Hosting The Data 
 The size of your data after adding the embedddings will likely be very large (mine went from 2.5 MB before embeddings to 972 MB afterwards). Any naive way of looping through and calculating cosine similarities would probably not be efficient, so I had to host the data somehow. I chose to use [Pinecone](https://www.pinecone.io/), one of the sources recommended by OpenAI. It's a vector database built for vector search, so it saved me a lot of implementation. Follow Pinecone's documentation to upload your data to an index, get the link to your index and save it in the `.env` file as `NEXT_PUBLIC_PINECONE_URL` and save your api key as `NEXT_PUBLIC_PINECONE_KEY`. At this point you should be good to go.
 
+DISCLAIMER: I've heard Pinecone has had some troubles with deleting databases, so progress carefully?
+
 ## Running The Project After Setup
 
 YOU WILL PROBABLY NEED A CORS-PROXY! Right now this app is using the [cors-anywhere](https://cors-anywhere.herokuapp.com/) demo proxy. Make sure to set this up before running otherwise you'll run into CORS errors.
